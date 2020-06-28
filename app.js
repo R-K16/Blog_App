@@ -108,6 +108,6 @@ app.delete("/blogs/:id",function(req,res){
         }
     });
 });
-app.listen(process.env.PORT,process.env.IP,function(){
+app.listen(3000,function(){
     console.log("Blog_App started");
 })
