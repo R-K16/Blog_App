@@ -6,7 +6,7 @@ var bodyParser=require("body-parser"),
     app=express();
     
 //app config
-mongoose.connect("mongodb://localhost/Blog-app");
+mongoose.connect("mongodb+srv://Raj:1234@blog-app.fmkkq.mongodb.net/Blog-app?retryWrites=true&w=majority");
 app.use(express.static("public"));
 app.set("view engine",'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
